@@ -1,0 +1,31 @@
+package -> controller   ex:HelloController.java         # Web requests lands here
+    package -> service      ex:HelloService.java        # Process your data here
+        package -> dao          ex:HelloDao.java        # Prepare your data for persistence
+            package -> repo         ex:HelloRepo.java   # save the data to the database
+
+Spring ->
+    IOC(Inversion of control)
+    DI(Dependency Injection)
+
+    public class Bishal{
+        int id;
+        Sting name;
+        Date dob;
+        }
+
+        Bishal bishal = new Bishal();
+
+        IN SPRING
+                stereotypes -> @Component, @Service, @Repository, @Controller
+
+         @Component
+         public class Bishal {
+            int id;
+            Sting name;
+            Date dob;
+            }
+
+
+            //DI (Dependency Injection)
+            @Autowired
+            Bishal bishal;
